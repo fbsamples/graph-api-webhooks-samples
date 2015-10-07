@@ -1,4 +1,4 @@
-# Contributing to real-time-updates-samples
+# Contributing to `real-time-updates-samples`
 We want to make contributing to this project as easy and transparent as
 possible.
 
@@ -6,8 +6,8 @@ possible.
 We actively welcome your pull requests.
 
 1. Fork the repo and create your branch from `master`.
-2. If you've changed APIs, update the documentation.
-3. If you haven't already, complete the Contributor License Agreement ("CLA").
+1. If you've changed APIs, update the documentation.
+1. If you haven't already, complete the Contributor License Agreement ("CLA").
 
 ## Contributor License Agreement ("CLA")
 In order to accept your pull request, we need you to submit a CLA. You only need
