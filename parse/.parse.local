@@ -1,0 +1,10 @@
+{
+  "applications": {
+    "Real Time Updates Test App": {
+      "applicationId": "EzGxZBdh063cKPWz0QO6ey2ic5Uts4aWQy0ph9UJ"
+    },
+    "_default": {
+      "link": "Real Time Updates Test App"
+    }
+  }
+}
