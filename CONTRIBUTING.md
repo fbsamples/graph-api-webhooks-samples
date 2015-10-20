@@ -1,4 +1,4 @@
-# Contributing to `real-time-updates-samples`
+# Contributing to `graph-api-webhooks-samples`
 We want to make contributing to this project as easy and transparent as
 possible.
 

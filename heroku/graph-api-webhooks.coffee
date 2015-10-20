@@ -5,7 +5,7 @@
 #   This source code is licensed under the license found in the
 #   LICENSE file in the root directory of this source tree.
 #
-#   Real Time Updates router for Facebook and Instagram.
+#   Router for Facebook's Graph API Webhooks and Instagram's Real-time Photo Updates.
 #
 # Configuration:
 #   FACEBOOK_APP_ACCESS_TOKEN
@@ -13,7 +13,7 @@
 #   WAIT_MINUTES
 #
 # Notes:
-#   Set up your Real-Time updates as descried here: https://developers.facebook.com/docs/graph-api/real-time-updates/
+#   Set up your updates as descried here: https://developers.facebook.com/docs/graph-api/webhooks/
 #   And here: https://instagram.com/developer/realtime/
 #
 #   The `verify_token` is "token".

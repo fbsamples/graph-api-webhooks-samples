@@ -1,6 +1,6 @@
-# Real Time Updates Parse Sample
+# Graph API Webhooks Parse Sample
 
-This is a sample client for [Facebook's Real Time Updates API](https://developers.facebook.com/docs/graph-api/real-time-updates/) and [Instagram's Real-time Photo Updates API](https://instagram.com/developer/realtime/), powered by [Parse Cloud Code](https://parse.com/docs/js/guide#cloud-code).
+This is a sample client for [Facebook's Graph API Webhooks](https://developers.facebook.com/docs/graph-api/webhooks/) and [Instagram's Real-time Photo Updates API](https://instagram.com/developer/realtime/), powered by [Parse Cloud Code](https://parse.com/docs/js/guide#cloud-code).
 
 ## Setup
 
@@ -16,7 +16,7 @@ This is a sample client for [Facebook's Real Time Updates API](https://developer
 
 ### Facebook
 1. Create a new [Facebook application](https://developers.facebook.com/apps).
-1. Set up your Facebook application's [Real Time Updates subscription](https://developers.facebook.com/docs/graph-api/real-time-updates/#setup) using `https://<your-subdomain>.parseapp.com/facebook` as the callback URL and `token` as the verify_token.
+1. Set up your Facebook application's [Graph API Webhooks subscription](https://developers.facebook.com/docs/graph-api/webhooks/#setup) using `https://<your-subdomain>.parseapp.com/facebook` as the callback URL and `token` as the verify_token.
 
 ### Instagram
 1. Register an [Instagram API client](https://instagram.com/developer/clients/manage/).
