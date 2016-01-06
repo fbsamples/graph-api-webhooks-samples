@@ -31,12 +31,14 @@ app.post('/facebook', function(req, res) {
   console.log('Facebook request body:');
   console.log(req.body);
   // Process the Facebook updates here
+  res.send(200);
 });
 
 app.post('/instagram', function(req, res) {
   console.log('Instagram request body:');
   console.log(req.body);
   // Process the Instagram updates here
+  res.send(200);
 });
 
 app.listen();
