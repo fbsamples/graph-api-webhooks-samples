@@ -5,7 +5,7 @@ This is a sample client for [Facebook's Graph API Webhooks](https://developers.f
 ## Setup
 
 ### Heroku
-1. Deploy with this button: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+1. Deploy with this button: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fbsamples/graph-api-webhooks-samples)
 1. Test your deployment with `curl https://<your-subdomain>.herokuapp.com` - you should see "It works!".
 
 
