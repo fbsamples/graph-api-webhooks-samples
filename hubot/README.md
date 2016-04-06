@@ -9,7 +9,7 @@ These instructions assume you have already set up [Hubot on Heroku](https://hubo
 1. Download `graph-api-webhooks.coffee`.
 1. Add a line to `hubot-scripts.json` with `graph-api-webhooks`.
 1. Create a new [Facebook application](https://developers.facebook.com/apps) and/or register an [Instagram API client](https://instagram.com/developer/clients/manage/).
-1. Using `token` as the verify_token, set up your Facebook application's [Graph API Webhooks subscription](https://developers.facebook.com/docs/graph-api/webhooks/#setup) using `https://<your-subdomain>.herokuapp.com/facebook` as the callback URL, and/or your Instagram client's [Real-time Photo Updates subscription](https://instagram.com/developer/realtime/) using your `https://<your-subdomain>.herokuapp.com/instagram` as the callback URL.
+1. Using `token` as the verify_token, set up your Facebook application's [Graph API Webhooks subscription](https://developers.facebook.com/docs/graph-api/webhooks/#setup) using `https://<your-subdomain>.herokuapp.com/facebook` as the callback URL, and/or your Instagram client's [subscription](https://www.instagram.com/developer/subscriptions/) using your `https://<your-subdomain>.herokuapp.com/instagram` as the callback URL.
 1. Set the Heroku configuration values defined at the top of `graph-api-webhooks.coffee` before deploying.
     - `FACEBOOK_APP_ACCESS_TOKEN` - [access token](https://developers.facebook.com/docs/facebook-login/access-tokens#apptokens) for your Facebook app
     - `REAL_TIME_ROOM` - chat room for Hubot to post in

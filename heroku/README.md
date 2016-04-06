@@ -1,6 +1,6 @@
 # Graph API Webhooks Heroku Sample
 
-This is a sample client for [Facebook's Graph API Webhooks](https://developers.facebook.com/docs/graph-api/webhooks/) and [Instagram's Real-time Photo Updates API](https://instagram.com/developer/realtime/), powered by [Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
+This is a sample client for [Facebook's Graph API Webhooks](https://developers.facebook.com/docs/graph-api/webhooks/) and [Instagram's Subscriptions API](https://www.instagram.com/developer/subscriptions/), powered by [Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs).
 
 ## Setup
 
@@ -15,4 +15,4 @@ This is a sample client for [Facebook's Graph API Webhooks](https://developers.f
 
 ### Instagram
 1. Register an [Instagram API client](https://instagram.com/developer/clients/manage/).
-1. Set up your client's [Real-time Photo Updates subscription](https://instagram.com/developer/realtime/) using your `https://<your-subdomain>.herokuapp.com/instagram` as the callback URL and `token` as the verify_token.
+1. Set up your client's [subscription](https://www.instagram.com/developer/subscriptions/) using your `https://<your-subdomain>.herokuapp.com/instagram` as the callback URL and `token` as the verify_token.

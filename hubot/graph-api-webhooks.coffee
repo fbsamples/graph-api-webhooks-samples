@@ -14,7 +14,7 @@
 #
 # Notes:
 #   Set up your updates as descried here: https://developers.facebook.com/docs/graph-api/webhooks/
-#   And here: https://instagram.com/developer/realtime/
+#   And here: https://www.instagram.com/developer/subscriptions/
 #
 #   The `verify_token` is "token".
 #
