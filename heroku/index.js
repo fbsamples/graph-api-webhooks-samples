@@ -17,7 +17,14 @@ app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
   console.log(req);
-  res.send('It works!');
+ if (
+    req.param('hub.mode') == 'subscribe' &&
+    req.param('hub.verify_token') == 'token'
+  ) {
+    res.send(req.param('hub.challenge'));
+  } else {
+    res.sendStatus(400);
+  }
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
