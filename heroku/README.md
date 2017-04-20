@@ -6,7 +6,7 @@ This is a sample client for [Facebook's Graph API Webhooks](https://developers.f
 
 ### Heroku
 1. Deploy with this button: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fbsamples/graph-api-webhooks-samples)
-1. Test your deployment with `curl https://<your-subdomain>.herokuapp.com` - you should see "It works!".
+1. Test your deployment with `curl https://<your-subdomain>.herokuapp.com` - you should see a list of received webhooks.
 1. For handling POST request validation (optional, but suggested), set the `APP_SECRET` [config var](https://devcenter.heroku.com/articles/config-vars) using your app secret value from your [Facebook app's settings](https://developers.facebook.com/apps).
 
 ### Facebook
