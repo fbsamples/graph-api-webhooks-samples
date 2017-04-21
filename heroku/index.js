@@ -17,9 +17,11 @@ app.listen(app.get('port'));
 app.use(xhub({ algorithm: 'sha1', secret: process.env.APP_SECRET }));
 app.use(bodyParser.json());
 
+var received_updates = [];
+
 app.get('/', function(req, res) {
   console.log(req);
-  res.send('It works!');
+  res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
@@ -34,24 +36,17 @@ app.get(['/facebook', '/instagram'], function(req, res) {
 });
 
 app.post('/facebook', function(req, res) {
-  console.log('Facebook request body:');
+  console.log('Facebook request body:', req.body);
 
-  if (req.isXHub) {
-    console.log('request header X-Hub-Signature found, validating');
-    if (req.isXHubValid()) {
-      console.log('request header X-Hub-Signature validated');
-      res.send('Verified!\n');
-    }
-  }
-  else {
+  if (!req.isXHubValid()) {
     console.log('Warning - request header X-Hub-Signature not present or invalid');
-    res.send('Failed to verify!\n');
-    // recommend sending 401 status in production for non-validated signatures
-    // res.sendStatus(401);
+    res.sendStatus(401);
+    return;
   }
-  console.log(req.body);
 
+  console.log('request header X-Hub-Signature validated');
   // Process the Facebook updates here
+  received_updates.unshift(req.body);
   res.sendStatus(200);
 });
 
@@ -59,6 +54,7 @@ app.post('/instagram', function(req, res) {
   console.log('Instagram request body:');
   console.log(req.body);
   // Process the Instagram updates here
+  received_updates.unshift(req.body);
   res.sendStatus(200);
 });
 
