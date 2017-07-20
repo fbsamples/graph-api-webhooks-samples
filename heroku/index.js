@@ -25,10 +25,7 @@ app.get('/', function(req, res) {
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
 
-app.get(['/facebook', '/instagram'], function(req, res) {
-  console.log("Expected token = " + token);
-  console.log("Actual token = " + req.param('hub.verify_token'));
-    
+app.get(['/facebook', '/instagram'], function(req, res) {   
   if (
     req.param('hub.mode') == 'subscribe' &&
     req.param('hub.verify_token') == token
