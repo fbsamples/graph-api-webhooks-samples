@@ -6,7 +6,7 @@ This is a sample client for Facebook's [Webhooks](https://developers.facebook.co
 
 ### Facebook Webhooks
 
-1. Refer to Facebook's [Webhooks sample app documentation](https://developers.facebook.com/docs/webhooks/sample-apps) to see how to use this app.
+1. Refer to Facebook's [Webhooks sample app documentation](https://developers.facebook.com/docs/graph-api/webhooks/sample-apps) to see how to use this app.
 1. Deploy the sample app on Heroku with this button:
 
     [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/fbsamples/graph-api-webhooks-samples)
