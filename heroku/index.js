@@ -25,12 +25,12 @@ app.get('/', function(req, res) {
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
 
-app.get(['/facebook', '/instagram'], function(req, res) {   
+app.get(['/facebook', '/instagram'], function(req, res) {
   if (
-    req.param('hub.mode') == 'subscribe' &&
-    req.param('hub.verify_token') == token
+    req.query['hub.mode'] == 'subscribe' &&
+    req.query['hub.verify_token'] == token
   ) {
-    res.send(req.param('hub.challenge'));
+    res.send(req.query['hub.challenge']);
   } else {
     res.sendStatus(400);
   }
