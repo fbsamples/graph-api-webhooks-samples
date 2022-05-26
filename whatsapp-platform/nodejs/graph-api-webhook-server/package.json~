@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-cloud-api-webhook-server",
+  "version": "1.0.0",
+  "description": "An Express based server demonstrating basic Webhook handling for WhatsApp Platform Cloud API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fbsamples/graph-api-webhooks-samples.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "cloud",
+    "api",
+    "webhook",
+    "webhooks"
+  ],
+  "author": "Justin Crites <jcrites@fb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fbsamples/graph-api-webhooks-samples/issues"
+  },
+  "homepage": "https://github.com/fbsamples/graph-api-webhooks-samples#readme"
+}
