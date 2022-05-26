@@ -21,7 +21,11 @@ Currently, they include Facebook's [Webhooks](https://developers.facebook.com/do
 
 ## License
 
-See the [license file][LICENSE].
+The sample code is available under the MIT license, as documented in [`LICENSE.md`](LICENSE.md).
+
+## Terms of Service
+
+As with any software that integrates with the Facebook platform, your use of this software is subject to the [Facebook Developer Principles and Policies](http://developers.facebook.com/policy/).
 
 ## Copyright
 
