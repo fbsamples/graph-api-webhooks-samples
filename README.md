@@ -19,6 +19,12 @@ Currently, they include Facebook's [Webhooks](https://developers.facebook.com/do
 1. [Heroku](heroku) - A sample client that receives Webhook events.
 1. [Hubot](hubot) - A script that messages a chat room when a Facebook Page post is published using Webhooks.
 
+## Other Sample Applications with Webhooks
+
+The following samples repositories also incorporate Webhook usage as part of the sample:
+
+1. [fbsamples/messenger-bot-samples](https://github.com/fbsamples/messenger-bot-samples): a sample bot for Messenger Platform. The Webhook code is part of [`webhooks.js`](https://github.com/fbsamples/messenger-bot-samples/blob/master/account-linking/routes/webhooks.js)
+
 ## License
 
 The sample code is available under the MIT license, as documented in [`LICENSE.md`](LICENSE.md).
