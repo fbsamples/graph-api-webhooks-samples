@@ -25,12 +25,21 @@ app.get('/', function(req, res) {
   res.send('<pre>' + JSON.stringify(received_updates, null, 2) + '</pre>');
 });
 
+<<<<<<< HEAD
 app.get(['/facebook', '/instagram'], function(req, res) {
   if (
     req.query['hub.mode'] == 'subscribe' &&
     req.query['hub.verify_token'] == token
   ) {
     res.send(req.query['hub.challenge']);
+=======
+app.get(['/facebook', '/instagram'], function(req, res) {   
+  if (
+    req.param('hub.mode') == 'subscribe' &&
+    req.param('hub.verify_token') == token
+  ) {
+    res.send(req.param('hub.challenge'));
+>>>>>>> f71ddd1 (Move NodeJS source under ./nodejs)
   } else {
     res.sendStatus(400);
   }
