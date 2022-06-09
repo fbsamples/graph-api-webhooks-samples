@@ -106,7 +106,7 @@ app.get('/', function(req, res) {
 });
 
 // Accepts POST requests at /webhook endpoint
-app.post("/facebook", (req, res) => {
+app.post("/webhook", (req, res) => {
   // Parse the request body from the POST
   let body = req.body;
 
@@ -116,7 +116,7 @@ app.post("/facebook", (req, res) => {
   console.log(JSON.stringify(req.body, null, 2));
   */
 
-  // info on WhatsApp text message payload: https://developers.facebook.com/docs/whatsapp/cloud-api/webhooks/payload-examples#text-messages
+  // info on WhatsApp text message payload: https://developers.webhook.com/docs/whatsapp/cloud-api/webhooks/payload-examples#text-messages
   if (req.body.object) {
     if (
       req.body.entry &&
@@ -159,7 +159,7 @@ app.post("/facebook", (req, res) => {
         axios({
           method: "POST", // Required, HTTP method, a string, e.g. POST, GET
           url:
-            "https://graph.facebook.com/v12.0/" +
+            "https://graph.webhook.com/v12.0/" +
             phone_number_id +
             "/messages?access_token=" +
             token,
@@ -180,7 +180,7 @@ app.post("/facebook", (req, res) => {
         axios({
           method: "POST", // Required, HTTP method, a string, e.g. POST, GET
           url:
-            "https://graph.facebook.com/v12.0/" +
+            "https://graph.webhook.com/v12.0/" +
             phone_number_id +
             "/messages?access_token=" +
             token,
@@ -201,7 +201,7 @@ app.post("/facebook", (req, res) => {
         axios({
           method: "POST", // Required, HTTP method, a string, e.g. POST, GET
           url:
-            "https://graph.facebook.com/v12.0/" +
+            "https://graph.webhook.com/v12.0/" +
             phone_number_id +
             "/messages?access_token=" +
             token,
@@ -229,7 +229,7 @@ app.post("/facebook", (req, res) => {
       axios({
         method: "POST", // Required, HTTP method, a string, e.g. POST, GET
         url:
-          "https://graph.facebook.com/v12.0/" +
+          "https://graph.webhook.com/v12.0/" +
           phone_number_id +
           "/messages?access_token=" +
           token,
@@ -973,8 +973,8 @@ $bible <Book_Name/Book_Number> <Chapter_Number> <Verse OR Verse_Range_Start> <Ve
 });
 
 // Accepts GET requests at the /webhook endpoint. You need this URL to setup webhook initially.
-// info on verification request payload: https://developers.facebook.com/docs/graph-api/webhooks/getting-started#verification-requests
-app.get("/facebook", (req, res) => {
+// info on verification request payload: https://developers.webhook.com/docs/graph-api/webhooks/getting-started#verification-requests
+app.get("/webhook", (req, res) => {
   /**
    * UPDATE YOUR VERIFY TOKEN
    *This will be the Verify Token value when you set up webhook
