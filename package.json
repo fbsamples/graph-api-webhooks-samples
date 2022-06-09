@@ -1,29 +1,25 @@
 {
-  "name": "graph-api-webhooks-samples",
-  "version": "0.1.0",
-  "description": "Graph API Webhooks Sample",
-  "main": "index.js",
+  "name": "whatsapp-cloudapi-quick-start",
+  "version": "1.0.0",
+  "description": "An example webhook for WhatsApp Cloud API quick start tutorial.",
+  "main": "app.js",
   "scripts": {
-    "start": "node heroku/index.js"
+    "start": "node app.js"
   },
+  "author": "WhatsApp",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "~1.15.0",
-    "express": "~4.13.3",
-    "express-x-hub": "^1.0.4"
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "csv": "^6.1.0",
+    "express": "^4.18.1",
+    "fs": "0.0.1-security",
+    "jquery": "^3.6.0",
+    "jsdom": "^19.0.0",
+    "request": "^2.88.2",
+    "ytdl-core": "^4.11.0"
   },
   "engines": {
-    "node": "0.12.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fbsamples/graph-api-webhooks-samples"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express",
-    "graph api"
-  ],
-  "license": "https://github.com/fbsamples/graph-api-webhooks-samples/blob/master/LICENSE",
-  "bugs": "https://github.com/fbsamples/graph-api-webhooks-samples/issues"
+    "node": "12.x"
+  }
 }
