@@ -101,7 +101,7 @@ const request = require("request"),
 app.listen(process.env.PORT || 1337, () => console.log("webhook is listening"));
 
 // Accepts POST requests at /webhook endpoint
-app.post("/webhook", (req, res) => {
+app.post("/facebook", (req, res) => {
   // Parse the request body from the POST
   let body = req.body;
 
@@ -969,7 +969,7 @@ $bible <Book_Name/Book_Number> <Chapter_Number> <Verse OR Verse_Range_Start> <Ve
 
 // Accepts GET requests at the /webhook endpoint. You need this URL to setup webhook initially.
 // info on verification request payload: https://developers.facebook.com/docs/graph-api/webhooks/getting-started#verification-requests
-app.get("/webhook", (req, res) => {
+app.get("/facebook", (req, res) => {
   /**
    * UPDATE YOUR VERIFY TOKEN
    *This will be the Verify Token value when you set up webhook
