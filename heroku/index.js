@@ -59,4 +59,12 @@ app.post('/instagram', function(req, res) {
   res.sendStatus(200);
 });
 
+app.post('/threads', function(req, res) {
+  console.log('Threads request body:');
+  console.log(req.body);
+  // Process the Threads updates here
+  received_updates.unshift(req.body);
+  res.sendStatus(200);
+});
+
 app.listen();
