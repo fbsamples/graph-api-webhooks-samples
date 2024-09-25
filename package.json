@@ -1,6 +1,6 @@
 {
   "name": "graph-api-webhooks-samples",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Graph API Webhooks Sample",
   "main": "index.js",
   "scripts": {
