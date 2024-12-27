@@ -16,7 +16,22 @@ export async function subscribe(app: FastifyInstance) {
         }
     };
 
-    app.get('/facebook', handler);
-    app.get('/instagram', handler);
-    app.get('/threads', handler);
+    const schema = {
+        schema: {
+            querystring: {
+                type: 'object',
+                required: ['hub.mode', 'hub.verify_token', 'hub.challenge'],
+                properties: {
+                    'hub.mode': { type: 'string' },
+                    'hub.verify_token': { type: 'string' },
+                    'hub.challenge': { type: 'string' },
+                },
+            },
+        },
+    };
+
+    app.get('/facebook', schema, handler);
+    app.get('/instagram', schema, handler);
+    app.get('/threads', schema, handler);
+    app.get('/whatsapp', schema, handler);
 };

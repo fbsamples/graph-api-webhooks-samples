@@ -11,10 +11,10 @@ export function xhub(request: FastifyRequest) {
 
     const [algorithm, sign] = header.split('=');
     const secret = process.env.APP_SECRET as string;
-    const body = request.body as Buffer;
+    const body = Buffer.from(JSON.stringify(request.body));
     const hash = crypto.createHmac(algorithm, secret).update(body).digest('hex');
     if (sign !== hash) {
-        console.error('Invalid X-Hub Signature');
+        console.log('Invalid X-Hub Signature');
         return false;
     }
 
