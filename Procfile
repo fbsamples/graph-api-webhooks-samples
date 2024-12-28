@@ -1,1 +1,1 @@
-web: node heroku/index.js
+web: heroku-php-apache2 heroku/index.php
